@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: CourierLoginTests
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 8.328 s <<< FAILURE! - in CourierLoginTests
+loginWithoutLoginTest(CourierLoginTests)  Time elapsed: 1.937 s  <<< ERROR!
+java.lang.RuntimeException: Failed to login courier: {"code":404,"message":"Учетная запись не найдена"}
+	at CourierLoginTests.loginWithoutLoginTest(CourierLoginTests.java:45)
+
+loginWithoutPasswordTest(CourierLoginTests)  Time elapsed: 1.055 s  <<< ERROR!
+java.lang.RuntimeException: Failed to login courier: {"code":404,"message":"Учетная запись не найдена"}
+	at CourierLoginTests.loginWithoutPasswordTest(CourierLoginTests.java:54)
+

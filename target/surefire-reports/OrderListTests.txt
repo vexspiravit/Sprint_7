@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: OrderListTests
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 3.016 s <<< FAILURE! - in OrderListTests
+getOrdersListWithValidCourierIdTest(OrderListTests)  Time elapsed: 1.011 s  <<< ERROR!
+java.lang.RuntimeException: Failed to create courier: {"code":409,"message":"Этот логин уже используется. Попробуйте другой."}
+	at OrderListTests.setUp(OrderListTests.java:37)
+
+getOrdersListWithValidCourierIdTest(OrderListTests)  Time elapsed: 1.012 s  <<< ERROR!
+java.lang.RuntimeException: Failed to finish order: {"code":404,"message":"Заказа с таким id не существует"}
+	at OrderListTests.finishOrder(OrderListTests.java:149)
+	at OrderListTests.tearDown(OrderListTests.java:157)
+
+getOrdersListWithInvalidCourierIdTest(OrderListTests)  Time elapsed: 1.013 s  <<< ERROR!
+java.lang.RuntimeException: Failed to create courier: {"code":409,"message":"Этот логин уже используется. Попробуйте другой."}
+	at OrderListTests.setUp(OrderListTests.java:37)
+
+getOrdersListWithInvalidCourierIdTest(OrderListTests)  Time elapsed: 1.013 s  <<< ERROR!
+java.lang.RuntimeException: Failed to finish order: {"code":404,"message":"Заказа с таким id не существует"}
+	at OrderListTests.finishOrder(OrderListTests.java:149)
+	at OrderListTests.tearDown(OrderListTests.java:157)
+
+getOrdersListWithoutCourierIdTest(OrderListTests)  Time elapsed: 0.975 s  <<< ERROR!
+java.lang.RuntimeException: Failed to create courier: {"code":409,"message":"Этот логин уже используется. Попробуйте другой."}
+	at OrderListTests.setUp(OrderListTests.java:37)
+
+getOrdersListWithoutCourierIdTest(OrderListTests)  Time elapsed: 0.976 s  <<< ERROR!
+java.lang.RuntimeException: Failed to finish order: {"code":404,"message":"Заказа с таким id не существует"}
+	at OrderListTests.finishOrder(OrderListTests.java:149)
+	at OrderListTests.tearDown(OrderListTests.java:157)
+
